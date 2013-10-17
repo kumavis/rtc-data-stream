@@ -1,6 +1,6 @@
 # rtc-data-stream
 
-convert a webRtc connection into a stream
+convert a webRTC connection into a stream
 
 use HTML5 [WebRTC](http://www.webrtc.org/) the node way -- with streams
 
