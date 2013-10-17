@@ -21,7 +21,7 @@ quickconnect({ ns: 'dctest', data: true }).on('dc:open', function(channel, peerI
 `rtc` is a stream and speaks stream events: `data`, `error` and `end`. that means you can pipe output to anything that accepts streams.
 
 ## try
-```javascript
+```
 # install beefy
 npm install -g beefy
 # clone repo
