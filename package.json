@@ -1,0 +1,17 @@
+{
+  "name": "rtc-data-stream",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy example.js:index.js --open"
+  },
+  "author": "kumavis",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "duplex-emitter": "~2.1.2",
+    "rtc-quickconnect": "~0.1.2"
+  }
+}
