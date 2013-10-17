@@ -1,7 +1,7 @@
 {
   "name": "rtc-data-stream",
   "version": "0.0.0",
-  "description": "",
+  "description": "convert a webRtc connection into a stream",
   "main": "index.js",
   "scripts": {
     "start": "beefy example.js:index.js --open"

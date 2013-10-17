@@ -1,6 +1,6 @@
 # rtc-data-stream
 
-    npm install rtc-data-channel
+convert a webRtc connection into a stream
 
 use HTML5 [WebRTC](http://www.webrtc.org/) the node way -- with streams
 
