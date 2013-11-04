@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "duplex-emitter": "~2.1.2",
-    "rtc-quickconnect": "~0.1.2"
+    "rtc-quickconnect": "~0.2.0"
   }
 }
