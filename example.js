@@ -3,7 +3,7 @@ var duplexEmitter = require('duplex-emitter')
 var rtcDataStream = require('./index.js')
 
 var rtcConnection = quickconnect({
-  signaller: 'http://sig.rtc.io:50000',
+  signalhost: 'http://sig.rtc.io:50000',
   ns: 'dctest',
   data: true
 })

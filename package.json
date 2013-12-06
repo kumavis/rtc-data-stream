@@ -8,10 +8,9 @@
   },
   "author": "kumavis",
   "license": "BSD-2-Clause",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "duplex-emitter": "~2.1.2",
-    "rtc-quickconnect": "~0.2.0"
+    "rtc-quickconnect": "~0.7.1"
   }
 }
