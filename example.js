@@ -2,10 +2,10 @@ var quickconnect = require('rtc-quickconnect')
 var duplexEmitter = require('duplex-emitter')
 var rtcDataStream = require('./index.js')
 
-var rtcConnection = quickconnect({
-  signalhost: 'http://sig.rtc.io:50000',
+var rtcConnection = quickconnect('http://rtc.io/switchboard/', {
   ns: 'dctest',
-  data: true
+  data: true,
+  debug: true
 })
 
 rtcConnection.on('dc:open', function(channel, peerId) {
