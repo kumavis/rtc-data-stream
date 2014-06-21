@@ -1,6 +1,6 @@
 {
   "name": "rtc-data-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "convert a webRtc connection into a stream",
   "main": "index.js",
   "scripts": {
