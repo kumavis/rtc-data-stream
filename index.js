@@ -65,7 +65,16 @@ RtcDataStream.prototype.write = function(data) {
 }
 
 RtcDataStream.prototype._write = function(data) {
-  this.rtc.send(data)
+  try {
+    this.rtc.send(data);
+  } catch(e) {
+    if (e.name == 'NetworkError') {
+      // the stream closed but didn't tell us
+      this.onClose(e);
+    } else {
+      this.onError(e);
+    }
+  }
 }
 
 RtcDataStream.prototype.end = function(data) {
