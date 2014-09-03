@@ -20,7 +20,11 @@ quickconnect({ ns: 'dctest', data: true }).on('dc:open', function(channel, peerI
 
 `rtc` is a stream and speaks stream events: `data`, `error` and `end`. that means you can pipe output to anything that accepts streams.
 
-## try
+## demo
+Open this demo in two windows to start a chat session between them
+[![view on requirebin](http://requirebin.com/badge.png)](http://requirebin.com/?gist=1ac2891d276ae07e46cd)
+
+## hack
 ```
 # install beefy
 npm install -g beefy
@@ -33,6 +37,7 @@ npm install
 npm start
 # open another tab with the generated link
 ```
+
 ## credit
 Based on [websocket-stream](https://github.com/maxogden/websocket-stream) by [max ogden](https://twitter.com/maxogden)
 
