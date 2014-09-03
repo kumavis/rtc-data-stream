@@ -21,8 +21,7 @@ quickconnect({ ns: 'dctest', data: true }).on('dc:open', function(channel, peerI
 `rtc` is a stream and speaks stream events: `data`, `error` and `end`. that means you can pipe output to anything that accepts streams.
 
 ## demo
-Open this demo in two windows to start a chat session between them
-[![view on requirebin](http://requirebin.com/badge.png)](http://requirebin.com/?gist=1ac2891d276ae07e46cd)
+Open [this demo]((http://requirebin.com/?gist=1ac2891d276ae07e46cd) in two windows to start a chat over rtc-data-stream
 
 ## hack
 ```
