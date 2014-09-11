@@ -12,10 +12,12 @@ you can use [browserify](http://github.com/substack/node-browserify) to package 
 var rtcDataStream = require('rtc-data-stream')
 var quickconnect = require('rtc-quickconnect')
 
-quickconnect({ ns: 'dctest', data: true }).on('dc:open', function(channel, peerId) {
-  var rtc = rtcDataStream(channel)
-  rtc.pipe(somewhereAwesome)
-})
+quickconnect('http://rtc.io/switchboard', { room: 'rtc-data-stream-demo' })
+  .createDataChannel('chat')
+  .on('channel:opened:chat', function(peerId, channel) {
+    var rtc = rtcDataStream(channel)
+    rtc.pipe(somewhereAwesome)
+  })
 ```
 
 `rtc` is a stream and speaks stream events: `data`, `error` and `end`. that means you can pipe output to anything that accepts streams.
