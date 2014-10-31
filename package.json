@@ -6,6 +6,10 @@
   "scripts": {
     "start": "beefy example.js:index.js --open"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumavis/rtc-data-stream.git"
+  },
   "author": "kumavis",
   "license": "BSD-2-Clause",
   "dependencies": {},
