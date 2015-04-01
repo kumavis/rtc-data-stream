@@ -1,7 +1,7 @@
 {
   "name": "rtc-data-stream",
-  "version": "0.0.2",
-  "description": "convert a webRtc connection into a stream",
+  "version": "1.0.0",
+  "description": "convert a webRTC connection into a stream",
   "main": "index.js",
   "scripts": {
     "start": "beefy example.js:index.js --open"
@@ -11,9 +11,8 @@
     "url": "https://github.com/kumavis/rtc-data-stream.git"
   },
   "author": "kumavis",
-  "license": "BSD-2-Clause",
-  "dependencies": {},
-  "devDependencies": {
+  "license": "MIT",
+  "dependencies": {
     "duplex-emitter": "~2.1.2",
     "rtc-quickconnect": "~0.8.3"
   }
