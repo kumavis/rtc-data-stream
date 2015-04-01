@@ -1,19 +1,18 @@
 var quickconnect = require('rtc-quickconnect')
-var duplexEmitter = require('duplex-emitter')
 var rtcDataStream = require('./index.js')
+var stdout = require('browser-stdout')
 
-quickconnect('http://rtc.io/switchboard', { room: 'rtc-data-stream-demo' })
+console.log('connecting...')
+
+quickconnect('https://switchboard.rtc.io/', { room: 'rtc-data-stream-demo' })
   .createDataChannel('demo')
   .on('channel:opened:demo', function(peerId, channel) {
 
     console.log('data channel opened for peer: ' + peerId)
   
-    var stream = window.stream = rtcDataStream(channel)
-    var emitter = window.emitter = duplexEmitter(stream)
-  
-    emitter.emit('ready')
-    emitter.on('ready', function() {
-      console.log('got a ready')
-    })
+    var duplexStream = rtcDataStream(channel)
+    duplexStream.pipe(stdout())
+    
+    duplexStream.write('hello world')
 
   })

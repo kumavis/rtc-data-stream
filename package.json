@@ -4,7 +4,7 @@
   "description": "convert a webRTC connection into a stream",
   "main": "index.js",
   "scripts": {
-    "start": "beefy example.js:index.js --open"
+    "start": "beefy example.js --open --live"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "author": "kumavis",
   "license": "MIT",
   "dependencies": {
-    "duplex-emitter": "~2.1.2",
-    "rtc-quickconnect": "~0.8.3"
+    "browser-stdout": "^1.2.0",
+    "rtc-quickconnect": "^4.2.1"
   }
 }
