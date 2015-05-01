@@ -29,23 +29,19 @@ function RtcDataStream(rtcChannel) {
 }
 
 RtcDataStream.prototype._onMessage = function(event, flags) {
-  console.log('onMessage:', arguments)
   var data = event.data ? event.data : event
   this.push(ab2Buffer(data))
 }
 
 RtcDataStream.prototype._onError = function(err) {
-  console.log('onError:', arguments)
   this.emit('error', err)
 }
 
 RtcDataStream.prototype._onClose = function() {
-  console.log('onClose:', arguments)
   this.push(null)
 }
 
 RtcDataStream.prototype._onOpen = function(err) {
-  console.log('onOpen:', arguments)
   this.emit('readable')
 }
 
