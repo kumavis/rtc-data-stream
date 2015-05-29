@@ -11,7 +11,7 @@ you can use [browserify](http://github.com/substack/node-browserify) to package 
 var rtcDataStream = require('rtc-data-stream')
 var quickconnect = require('rtc-quickconnect')
 
-quickconnect('http://rtc.io/switchboard', { room: 'rtc-data-stream-demo' })
+quickconnect('https://switchboard.rtc.io/', { room: 'rtc-data-stream-demo' })
   .createDataChannel('chat')
   .on('channel:opened:chat', function(peerId, channel) {
     
