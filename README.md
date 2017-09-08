@@ -1,5 +1,7 @@
 # rtc-data-stream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kumavis/rtc-data-stream.svg)](https://greenkeeper.io/)
+
 convert a reliable [RTCDataChannel](http://dev.w3.org/2011/webrtc/editor/webrtc.html#rtcdatachannel) into a stream.
 
 use HTML5 [WebRTC](http://www.webrtc.org/) the node way -- with streams.
